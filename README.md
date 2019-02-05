@@ -1,3 +1,3 @@
 # boatStorage
-A redesign for a boat storage business.
-I used HMLT, and CSS to create this site.
+A redesign for a local boat storage business.
+I used HTML, and CSS to create this site.
