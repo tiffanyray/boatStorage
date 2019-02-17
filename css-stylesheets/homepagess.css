@@ -16,87 +16,71 @@ ul {
 
 
 
-/* header */
+/* Header & Nav bar */
 header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-  background-color: white;
-  width: 100%;
-  opacity: .75;
-  min-height: 80px;
+}
+.overlay-menu {
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  background-image: linear-gradient(hsla(0 , 0%, 100%, 1), hsla(0 , 0%, 100%, .9), hsla(0 , 0%, 100%, .8), hsla( 0, 0%, 100%, .5));
+  z-index: -1;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 80px;
+header h1 {
+  padding: 20px;
+  margin: 0 auto 0 0;
 }
 
-.logo {
-  text-transform: uppercase;
-  font-size: 18x;
-  letter-spacing: 2px;
-}
 
-.nav_links {
-  display: flex;
-  justify-content: space-around;
-  width: 40vw;
-  list-style-type: none;
-}
-
-.nav_links a {
-  text-decoration: none;
-  color: #395350;
-  letter-spacing: 1.5px;
-}
-
-.nav_links a:hover {
-  font-size: 18px;
-}
-
+/* Burger styles  */
 .burger {
-  display: none;
+  width: 40px;
+  height: 40px;
+  margin: auto 0 auto auto;
+  padding: 20px 20px 0 20px;
+  cursor: pointer;
 }
-
-.burger div {
-  width: 25px;
-  height: 3px;
+.line {
+  width: 100%;
+  height: 5px;
   background-color: #395350;
-  margin: 5px;
+  margin: 3px 0;
+  border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
+/* Ul styles */
+.nav-ul {
+  display: none;
+  box-sizing: border-box;
+  margin: auto 0 auto auto;
+  background: hsla(0, 0%, 100%, .5);
+}
+.nav-ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-ul li {
+  list-style-type: none;
+  padding: 20px ;
+  text-align: right;
+}
+
+@media only screen and (min-width: 900px) {
+  #mobile-menu {
+    display: none;
   }
-  header {
-    opacity: 1;
-  }
-  .nav_links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 60px;
-    background-color: white;
+  .nav-ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-
-  .burger {
-    display: block;
-    cursor: pointer;
+    flex-direction: row;
+    background: none;
   }
 }
-
-.nav_active {
-  transform: translateX(0%);
-}
-
 
 
 /* header image */
