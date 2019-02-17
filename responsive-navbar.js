@@ -7,7 +7,7 @@ $(document).ready(() => {
   });
 
   $(window).bind("resize", () => {
-    if( $(window).width() > 900) {
+    if( $(window).width() > 800) {
       $('.nav-ul').removeAttr("style");
     }
   })

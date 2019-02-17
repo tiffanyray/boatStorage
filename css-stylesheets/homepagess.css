@@ -32,6 +32,7 @@ header {
 }
 
 header h1 {
+  font-size: 1rem;
   padding: 20px;
   margin: 0 auto 0 0;
 }
@@ -71,7 +72,7 @@ header h1 {
   text-align: right;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
   #mobile-menu {
     display: none;
   }
@@ -79,6 +80,9 @@ header h1 {
     display: flex;
     flex-direction: row;
     background: none;
+  }
+  header h1 {
+    font-size: 2rem;
   }
 }
 
